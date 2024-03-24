@@ -1,0 +1,88 @@
+
+@import 'normalize.css';
+@import 'variables.scss';
+
+*{
+    font-family: "Madimi One", sans-serif;
+}
+
+body{
+    background-color: $color-primary;
+    color: $text-color;
+}
+
+
+#app{
+    @include Center;
+    flex-direction: column;
+    margin-top: 10rem;
+    .todo__input{
+        padding: 10px 35px;
+        border: 2px solid  #000;
+        outline: none;
+        border-radius: 10px;
+    }
+    .todo__button{
+        background: #fff;
+        padding: 9px 15px;
+        border-radius: 10px;
+    }
+    .todo__select{
+        padding: 9px 10px;
+        outline: none;
+    }
+
+    .todo__container{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+
+    .todo__list{
+        width: 20%;
+        margin: 0 auto;
+    }
+    .todo{
+        height: 2.5rem;
+        display: flex;
+        background-color: #fff;
+        align-items: center;
+        color: #000;
+        margin-bottom: 15px;
+        transition: all 0.5s ease;
+        .todo__element{
+            flex: 1;
+            list-style: none;
+            font-size: 23px;
+            margin-right: 15px;
+            padding: 0px 10px;
+        }
+
+        button{
+            border: none;
+            cursor: pointer;
+            padding: 0.7rem;
+        }
+
+        .todo__button-check{
+            background: green;
+        }
+        .todo__button-delete{
+            background: red;
+        }
+
+        i{
+            pointer-events: none;
+        }
+
+    }
+    .completed{
+        text-decoration: line-through;
+        opacity: 0.5;
+    }
+
+    .fall{
+        transform: translateZ(-8rem) rotate(20deg);
+        opacity: 0;
+    }
+}

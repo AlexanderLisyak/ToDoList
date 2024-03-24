@@ -1,0 +1,14 @@
+$color-primary:  #b16005;
+$color-secondary: #759242;
+
+$text-color: #fff;
+
+
+@mixin Center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+

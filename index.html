@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/f58f7dfb83.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <title>ToDo-list</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>My ToDoList</h1>
+      <form action="#">
+        <input type="text" class="todo__input">
+        <button class="todo__button"><i class="fa-solid fa-plus"></i></button>
+        <select name="todos" id="" class="todo__select">
+          <option value="All">All</option>
+          <option value="Completed">Completed</option>
+          <option value="Incompleted">Incompleted</option>
+        </select>
+      </form>
+
+      <div class="todo__container">
+        <ul class="todo__list">
+        </ul>
+      </div>
+    </div>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
